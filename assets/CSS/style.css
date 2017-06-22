@@ -1,0 +1,248 @@
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    background-color: #464646;
+   
+}
+
+
+/* SIGN UP PAGE ------------------------------- */
+/* Sign Up Button */
+
+#signUpButton {
+	width: 30%;
+	margin-top: 25%;
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	font-size:160%;
+	opacity: 5;
+	border: 4px solid #7FFFD4;
+	opacity: 0.9;
+
+}
+
+#signLogo {
+	margin-left:-9%;
+	margin-bottom: -10%;
+	margin-top: -2%;
+	width: 70%;
+}
+
+#signUpForm {
+	height: 80%;
+	width: 50%;
+	margin-top:10%;
+	background-color:white;
+	opacity: 0;
+	font-family: 'Raleway', sans-serif;
+	border: 4px solid #7FFFD4;
+
+
+}
+
+/* HEADER ----------------------------- */
+
+.header {
+    margin:0 0 30px 0;
+    padding: 5px 0 0 0 ;
+    width: 100%;
+  	background-image: url("http://static.tumblr.com/7b37633d29d9aaca9828b5132273cdf1/sy59fz4/1linmyvvt/tumblr_static_4y2skv97m24ogs84wc40sccso.jpg");
+  	background-repeat:no-repeat;
+  	background-size:cover;
+  	margin-top: -22%;
+  	border-bottom: 10px solid #7FFFD4;
+
+}
+
+#logo {
+	display:block;
+	margin:auto;
+	margin-top:23%;
+}
+
+/* HOME PAGE ----------------------------- */
+
+#eventsHead {
+	margin-left: 3%;
+}
+
+#calendar {
+	margin:0 5.5%;
+}
+
+#rightHead {
+	background-image: url("https://texturefabrik.files.wordpress.com/2013/05/26-05-2013_sprayed_031.jpg");
+	color:white;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+#findHead{
+    background-image: url("https://texturefabrik.files.wordpress.com/2013/05/26-05-2013_sprayed_031.jpg");
+	color:white;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+    
+}
+
+#addHead {
+	background-image: url("https://texturefabrik.files.wordpress.com/2013/05/26-05-2013_sprayed_031.jpg");
+	color:white;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+#customEvent-submitButton {
+	border: 3px solid #7FFFD4;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+/* EVENTS PAGE --------------------------- */
+#details-section {
+
+	text-align: center;
+	border: solid 3px black;
+	padding: 5px 0px;
+	margin-left:5.5%;
+
+}
+
+#buddyPics {
+	margin-left:5.5%;
+
+}
+
+}
+
+.thumbnailMe {
+	display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.img-circle {
+	width:20%;
+
+}
+
+/* FOOTER -------------------------------- */
+
+#footer {
+	background-color:black;
+	color:white;
+	text-align:center;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom:-1%;
+	line-height:4;
+	font-size:80%;
+	border-top: solid thick #7FFFD4;
+}
+
+/* Added By Kevin ( Event Search ) */
+.event-section {
+	width: 90%;
+    margin:0 5% 0 5%;
+}
+#eventSearch-submit-Btn{
+    border: 3px solid #7FFFD4;
+	font-family: 'Raleway', sans-serif;
+}
+.addEvent {
+	width: 90%;
+    margin: 0 5%;
+}
+.custom-container {
+	width: 90%;
+}
+.well {
+    height: auto;
+}
+.panel-body a{
+	word-break: break-all;
+}
+.titleBar{
+    height: 40px;
+}
+.locationHolder{
+    padding: 10px;
+}
+.dateHolder{
+    padding: 10px;
+}
+.linkHolder{
+    justify-content: center;
+}
+.imageHolder{
+    height: 150px;
+    padding: 10px;
+}
+.descriptionHolder{
+    padding: 10px;
+}
+#map {
+    height: 300px;
+    width: 100%;
+    border: 1px solid dimgrey;
+}
+.event-main-container {
+  overflow: auto;
+
+}
+.event-select-section {
+    margin: 0 20px ;
+    padding: 10px;
+	
+}
+.map-section {
+    margin: 10px 20px;
+    padding: 10px;
+}
+.event-select-display {
+	
+    padding: 10px;
+    border: 5px solid #7FFFD4;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color:black;
+    background-color:silver;
+
+}
+
+.event-select-display h2 {
+	color: white;
+}
+
+.event-select-display h4 {
+	color:white;
+	margin-top:-0.5%;
+	margin-bottom: 4%;
+}
+
+.event-select-display p {
+	padding-right:20px;
+	padding-left:20px;
+}
+
+.event-select-display a {
+	text-decoration: none;
+	color:#7FFFD4;
+
+}
+
+
+

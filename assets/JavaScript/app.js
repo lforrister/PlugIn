@@ -63,7 +63,7 @@ $("#submit").on("click", function(event) {
         event:  ""
     }); //-----CLOSE PUSH ----
     
-    location.href = "index.html";
+    location.href = "search.html";
    // window.location.href = "index.html";
 });//-----CLOSE SUBMIT -------
 

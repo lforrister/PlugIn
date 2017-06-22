@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,115 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600|Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--links added by kevin-->
+<!--
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+-->
+    <!--links added by kevin-->
     <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
     
-    <title> Plug In </title>
+    <title> Plug In: Sign Up </title>
 </head>
-<body>
+<body background="http://static.tumblr.com/7b37633d29d9aaca9828b5132273cdf1/sy59fz4/1linmyvvt/tumblr_static_4y2skv97m24ogs84wc40sccso.jpg">
 
-<!-- HEADER -->
-    
-<header class = "header">
-	<img src="assets/images/pluginlogowhite.png" id="logo"> 
-</header>
-    
-<!-- BODY -->
+<!-- Sign Up Button -->
+<button class="btn btn-default btn-lg center-block" id="signUpButton"> 
+    <img src="assets/images/signupblack.png" id="signLogo">
+ </button>
 
-<div class="main-container row">
-  <div class="col-sm-8 col-xs-12"> 
- 	 <div class = "event-section">
-		 <h4 id="findHead"> FIND AN EVENT </h4>
-         <!--Added By Kevin (start)-->
-         <div class="event-search">
-             <form id="eventForm">
-                 <div class="row">
-                     <div class="eventSearchForm">
-                        <div class="col-md-6"> 
-                             <div class="form-group">
-                                <label for="venue-label">Venue</label>
-                                <input type="text" class="form-control" id="venue-input" placeholder="Ex. Dallas">
-                            </div>
-                            <div class="form-group">
-                                <label for="category-label">Event Type :</label>
-                                <input type="text" class="form-control" id="category-input" placeholder="Ex. Concerts">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                              <label for="select">When :</label>
-                              <select id="select" class="form-control">
-                                  <option>Today</option>
-                                  <option>This Week</option>
-                                  <option>Next Week</option>
-                                  <option>Future</option>
-                                  <option>All</option>
-                              </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="radious-label">Radious (miles)</label>
-                                <select id="radious-input" class="form-control" >
-                                    <option>5</option>
-                                    <option>10</option>
-                                    <option>15</option>
-                                    <option>25</option>
-                                    <option>35</option>
-                                    <option>50</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                <button type="submit" class="btn btn-default" id="eventSearch-submit-Btn">Submit</button>
-            </form> 
-        </div>
-        <div class="resultsPart">
-            <div class="row">
-                <div class="col-sm-12">
-            <!--                    <br>-->
-                    <div class="panel-body row" id="well-section"></div>
-                    <div class="btn-group" role="group" data-toggle="buttons" aria-label="btnGroup"></div>
-                </div>
-            </div>
-        </div>
-      </div>
-  </div>
-  <div class="custom-container col-sm-4 col-xs-12">
-	<!-- ADD YOUR OWN EVENT FORM-->
-        <div class="addEvent" id = "addEvent">
-            <h4 id="rightHead"> ADD YOUR OWN EVENT </h4>
-            <form >
-                <div class="form-group">
-                    <label for="-label">Event</label>
-                    <input type="text" class="form-control" id="clientEvent-artist-input">
-                </div>
-                <div class="form-group">
-                    <label for="venue-label">Venue</label>
-                    <input type="text" class="form-control" id="clientEvent-venue-input">
-                </div>
-                <div class="form-group">
-                    <label for="date-label">Date</label>
-                    <input type="date" class="form-control" id="clientEvent-date-input" placeholder="mm/dd/yyyy">
-                </div>
-                <button type="submit" class="btn btn-default" id="customEvent-submitButton">Submit</button>
-            </form>
-        </div>
-    </div>
+<!-- Sign Up Form -->
+
+<div id = "signUpForm" class="btn btn-default btn-lg center-block">
+    <form>
+            Name:
+            <br>
+            <input type="text" id="nameInput">
+            <br><br>
+            Email Address:
+            <br>
+            <input type="email" id="emailInput">
+            <br><br>
+            Phone Number:
+            <br>
+            <input type="tel" id="phoneNumberInput">
+            <br><br>
+            City:
+            <br>
+            <input type="text" id="cityInput">
+            <br><br>
+            <button id="submit" value="validate">Submit 
+<!--                <a href="index.html" > Submit </a>                -->
+            </button>
+        </form>
+
 </div>
 
-<br><br><br><br><br><br>
 
 
-<!-- FOOTER -->
+<!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script src="assets/javascript/app.js"></script>
 
-<nav class="navbar navbar-default navbar-fixed-bottom" id="footer">
-  <div class="container">
-    <p> FOOTER COPY HERE FOOTER COPY HERE </p>
-  </div>
-</nav>
- <script src="assets/javascript/app.js"></script> 
+<script> 
+
+//    $("#signUpButton").on("click", function() {
+//        $("#signUpButton").hide();
+//        $("#signUpForm").css("opacity", "1");
+
+// });
+
+
+
+
+
+</script>
 
 </body>
 

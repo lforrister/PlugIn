@@ -109,7 +109,7 @@ $("#eventSearch-submit-Btn").on("click", function(event){
     $("#well-section").empty();
 
      var apiKey = "tpx4FM5B5ftptgTf";
-     var queryURL = "http://api.eventful.com/json/events/search";
+     var queryURL = "https://api.eventful.com/json/events/search";
     
      queryURL += '?' + $.param ({
         'app_key': apiKey,
